@@ -49,9 +49,9 @@ public class ArquivosController {
                     String[] vetLinha = linha.split(",");
                     for(int i =0; i < 1; i++) {
                         if(linha.contains("Fruits")) {
-                            System.out.print(vetLinha[0] + "\t ");
-                            System.out.print(vetLinha[1] + "\t ");
-                            System.out.print(vetLinha[3] + "\t \n");
+                        	if(i==2)continue;
+                            System.out.print("Fruta: " + vetLinha[0] + "               \tNome Cientifico: "+ vetLinha[1] + "               \tSubgrupo: "+ vetLinha[3] + "               \t");
+              
                         }
                         linha = buffer.readLine();
                     }
